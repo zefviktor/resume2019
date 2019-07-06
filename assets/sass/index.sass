@@ -1,0 +1,318 @@
+@import "variables"
+@import "grid"
+@import "fonts"
+
+body
+  @media (min-width: 992px)
+    background-color: var(--color-third)
+  @media (max-width: 991px)
+    background-color: var(--color-third)
+.mobile
+  display: flex
+  flex-direction: column
+  @media (min-width: 992px)
+    display: none
+.desktop
+  display: flex
+  flex-direction: row
+  @media (max-width: 991px)
+    display: none
+
+.avatar
+  width: var(--icon-size-avatar-bg)
+  height: var(--icon-size-avatar-bg)
+  background-color: var(--background-color-avatar)
+  border-radius: 50%
+  margin: 0 auto
+  display: flex
+  justify-content: center
+  align-items: center
+
+.section
+  &:nth-child(2n-1)
+    background-color: var(--color-second)
+    width: 100%
+    padding-top: var(--padding-block-top)
+    padding-bottom: var(--padding-block-bottom)
+    color: var(--color-third)
+  &:nth-child(2n)
+    background-color: var(--color-third)
+    width: 100%
+    padding-top: var(--padding-block-top)
+    padding-bottom: var(--padding-block-bottom)
+    color: var(--color-first)
+.block
+  width: 100%
+  padding-top: 10px
+  display: flex
+  flex-direction: column
+  &__item
+    display: flex
+    align-items: start
+    flex-direction: column
+    padding-left: var(--padding-item)
+    padding-right: var(--padding-item)
+    margin: calc(var(--padding-item)/4) 0
+    &-type
+      display: flex
+      align-items: center
+      flex-direction: row
+      &-title
+        padding-left: var(--padding-left-title)
+  &__content
+    padding-left: var(--padding-block)
+    padding-right: var(--padding-block)
+    &-education
+      margin: 0 auto
+      padding-top: calc(var(--font-size-content-text)/5)
+      padding-bottom: calc(var(--font-size-content-text)/5)
+      display: flex
+      width: var(--width-education)
+      flex-direction: var(--flex-direction-education)
+      justify-content: var(--justify-content-education)
+      align-items: var(--align-items-education)
+      &-item
+        padding-top: calc(var(--font-size-content-text)/10)
+        padding-bottom: calc(var(--font-size-content-text)/10)
+    &-experience
+      margin: 0 auto
+      padding-top: calc(var(--font-size-content-text)/5)
+      padding-bottom: calc(var(--font-size-content-text)/5)
+      width: var(--width-experience)
+      flex-direction: var(--flex-direction-experience)
+      justify-content: var(--justify-content-experience)
+      align-items: var(--align-items-experience)
+      flex-wrap: wrap
+      &-item
+        padding-top: calc(var(--font-size-content-text)/10)
+        padding-bottom: calc(var(--font-size-content-text)/10)
+    &-skills
+      margin: 0 auto
+      padding-top: calc(var(--font-size-content-text)/5)
+      padding-bottom: calc(var(--font-size-content-text)/5)
+      display: flex
+      width: var(--width-skills)
+      flex-direction: var(--flex-direction-skills)
+      justify-content: var(--justify-content-skills)
+      align-items: var(--align-items-skills)
+      &-item
+        padding-top: calc(var(--font-size-content-text)/10)
+        padding-bottom: calc(var(--font-size-content-text)/10)
+        width: var(--width-skills-item)
+        display: flex
+        flex-direction: row
+        align-items: center
+      &-range
+        width: 100%
+        padding: 2px
+    &-languages
+      margin: 0 auto
+      padding-top: calc(var(--font-size-content-text)/10)
+      padding-bottom: calc(var(--font-size-content-text)/10)
+      display: flex
+      width: var(--width-languages)
+      flex-direction: var(--flex-direction-languages)
+      justify-content: var(--justify-content-languages)
+      align-items: var(--align-items-languages)
+      &-item
+        padding-top: calc(var(--font-size-content-text)/10)
+        padding-bottom: calc(var(--font-size-content-text)/10)
+        width: var(--width-languages-item)
+        display: flex
+        flex-direction: row
+        align-items: center
+        box-sizing: content-box
+      &-range
+        width: 100%
+        padding: calc(var(--font-size-content-text)/10)
+    &-personaliti
+      margin: 0 auto
+      padding-top: calc(var(--font-size-content-text)/5)
+      padding-bottom: calc(var(--font-size-content-text)/5)
+      display: flex
+      width: var(--width-personaliti)
+      flex-direction: var(--flex-direction-personaliti)
+      justify-content: var(--justify-content-personaliti)
+      align-items: var(--align-items-personaliti)
+      flex-wrap: wrap
+      &-item
+        padding-top: calc(var(--font-size-content-text)/5)
+        padding-bottom: calc(var(--font-size-content-text)/5)
+        width: var(--width-personaliti-item)
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: var(--justify-content-personaliti-item)
+        box-sizing: content-box
+    &-hobbies
+      margin: 0 auto
+      display: flex
+      width: var(--width-hobbies)
+      flex-direction: var(--flex-direction-hobbies)
+      justify-content: var(--justify-content-hobbies)
+      align-items: var(--align-items-hobbies)
+      flex-wrap: wrap
+      &-item
+        width: var(--width-hobbies-item)
+        display: flex
+        flex-direction: column
+        align-items: center
+        box-sizing: content-box
+    &-personal
+      margin: 0 auto
+      padding-top: calc(var(--font-size-content-text)/5)
+      padding-bottom: calc(var(--font-size-content-text)/5)
+      display: flex
+      width: var(--width-personal)
+      flex-direction: var(--flex-direction-personal)
+      justify-content: var(--justify-content-personal)
+      align-items: var(--align-items-personal)
+      flex-wrap: wrap
+      &-item
+        padding-top: calc(var(--font-size-content-text)/5)
+        padding-bottom: calc(var(--font-size-content-text)/5)
+        width: var(--width-personal-item)
+        display: flex
+        align-items: center
+        flex-flow: row
+
+.icon
+  &__general
+    display: flex
+    width: var(--icon-size-avatar)
+    height: var(--icon-size-avatar)
+  &__contact
+    padding: 2px
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+    text-align: center
+    width: calc(var(--padding-invisible)*1.5)
+    font-size: calc(var(--font-size-content-text)*1.5)
+  &__personaliti
+    text-align: center
+    width: var(--padding-invisible)
+    font-size: var(--font-size-content-text)
+  &__skills
+    text-align: center
+    width: var(--padding-invisible)
+    font-size: var(--font-size-content-text)
+  &__invisible
+    &-big
+      width: var(--padding-invisible)
+      height: var(--padding-invisible)
+    &-small
+      width: var(--padding-invisible/2)
+      height: var(--padding-invisible/2)
+  &__subtitle
+    display: flex
+    margin: 0 auto
+    align-items: center
+    justify-content: center
+    &-item
+      display: flex
+      align-items: center
+      justify-content: center
+      background-color: var(--color-first)
+      border-radius: 50%
+      width: calc(var(--icon-size-subtitle)*2)
+      height: calc(var(--icon-size-subtitle)*2)
+      font-size: var(--icon-size-subtitle)
+      color: var(--color-third)
+  &__range
+    display: flex
+    flex-direction: row
+    &-item
+      margin: 3px
+      width: 15px
+      height: 15px
+      &-on
+        background-color: var(--color-first)
+        color: var(--color-third)
+      &-off
+        background-color: var(--color-four)
+        color: var(--color-first)
+  &__hobbies
+    display: flex
+    align-items: center
+    justify-content: center
+    width: calc(var(--icon-size-subtitle)*2)
+    height: calc(var(--icon-size-subtitle)*2)
+    font-size: var(--icon-size-subtitle)
+    color: var(--color-first)
+
+.word
+  &__title
+    font-family: var(--font-family-first)
+    text-transform: uppercase
+    font-style: italic
+    font-size: var(--font-size-title)
+    font-weight: var(--font-weight__bold)
+  &__subtitle
+    font-family: var(--font-family-first)
+    text-transform: uppercase
+    font-style: italic
+    font-size: var(--font-size-subtitle)
+    font-weight: var(--font-weight__bold)
+  &__content
+    &-date
+      font-family: var(--font-family-first)
+      font-style: italic
+      font-size: var(--font-size-content-date)
+      font-weight: var(--font-weight__light)
+    &-title
+      font-family: var(--font-family-first)
+      font-style: italic
+      font-size: var(--font-size-content-title)
+      font-weight: var(--font-weight__bold)
+    &-subtitle
+      font-family: var(--font-family-first)
+      font-style: italic
+      font-size: var(--font-size-content-subtitle)
+      font-weight: var(--font-weight__regular)
+    &-text
+      font-family: var(--font-family-first)
+      font-style: italic
+      font-size: var(--font-size-content-text)
+      font-weight: var(--font-weight__light)
+
+.item1
+  background-color: var(--color-second)
+.item2
+  background-color: var(--color-first)
+.item3
+  position: relative
+  &:before
+    position: absolute
+    content: ''
+    left: -1px
+    background-color: var(--color-second)
+    height: 100%
+    width: calc(var(--icon-size-subtitle)/3)
+.item4
+  position: relative
+  &:before
+    position: absolute
+    content: ''
+    left: -1px
+    background-color: var(--color-third)
+    height: 100%
+    width: calc(var(--icon-size-subtitle)/3)
+.item5
+  position: relative
+  &:after
+    position: absolute
+    content: ''
+    top: 0
+    right: 0
+    background-color: var(--color-second)
+    height: 100%
+    width: var(--item5)
+.itemOn1
+  background-color: var(--color-first)
+.itemOn2
+  background-color: var(--color-third)
+.itemOff1
+  color: var(--color-first)
+.itemOff2
+  color: var(--color-third)

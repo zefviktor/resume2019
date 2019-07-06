@@ -1,0 +1,49 @@
+doctype html
+html
+    head
+    meta(charset = 'utf-8')
+    meta(name='viewport', content="initial-scale=1.0, width=device-width")
+    title Viktor Ryzhak
+    link(rel="stylesheet" href="css/reset.min.css")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css")
+    link(rel="stylesheet" href="js/jquery-3.1.1.min.js" type="text/css")
+    link(rel="stylesheet" href="css/index.min.css" type="text/css")
+    body
+        section(class="desktop container")
+            div(class="section")
+                include pug/block1.html
+                include pug/block5.html
+                include pug/block7.html
+                include pug/block9.html
+            div(class="section")
+                include pug/block2.html
+                include pug/block3.html
+                include pug/block4.html
+                include pug/block6.html
+                include pug/block8.html
+                include pug/block10.html
+
+        section(class="mobile")
+            div(class="section")
+                include pug/block1.html
+            div(class="section")
+                include pug/block2.html
+            div(class="section")
+                include pug/block3.html
+            div(class="section")
+                include pug/block4.html
+            div(class="section")
+                include pug/block5.html
+            div(class="section")
+                include pug/block6.html
+            div(class="section")
+                include pug/block7.html
+            div(class="section")
+                include pug/block8.html
+            div(class="section")
+                include pug/block9.html
+            div(class="section")
+                include pug/block10.html
+
+        script(src="js/functions.js")

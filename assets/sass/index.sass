@@ -2,6 +2,7 @@
 @import "grid"
 @import "fonts"
 
+
 body
   @media (min-width: 992px)
     background-color: var(--color-third)
@@ -30,17 +31,31 @@ body
 
 .section
   &:nth-child(2n-1)
+
     background-color: var(--color-second)
     width: 100%
     padding-top: var(--padding-block-top)
     padding-bottom: var(--padding-block-bottom)
     color: var(--color-third)
+    a:link,
+    a:visited,
+    a:hover,
+    a:active
+      text-decoration: none
+      color: var(--color-third)
+
   &:nth-child(2n)
     background-color: var(--color-third)
     width: 100%
     padding-top: var(--padding-block-top)
     padding-bottom: var(--padding-block-bottom)
     color: var(--color-first)
+    a:link,
+    a:visited,
+    a:hover,
+    a:active
+      text-decoration: none
+      color: var( --color-first)
 .block
   width: 100%
   padding-top: 10px

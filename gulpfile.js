@@ -75,7 +75,7 @@ gulp.task('sass', function () {
 
 
 gulp.task('html', function () {
-    return gulp.src("assets/**/*.html")
+    return gulp.src("assets/*.html")
         .pipe(gulp.dest("build"))
         .pipe(browserSync.reload({stream: true}))
 });
@@ -100,7 +100,7 @@ gulp.task('watch', gulp.series('html', 'pug', 'img', 'js', 'sass', 'fonts', 'min
         // tunnel: true
     });
     gulp.watch('assets/**/*.html', gulp.parallel('html'));
-    gulp.watch('assets/**/*.+(jade|pug)', gulp.parallel('pug'));
+    gulp.watch('assets/**/*.+(jade|pug|html)', gulp.parallel('pug'));
     gulp.watch('assets/sass/**/*.sass', gulp.parallel('sass'));
     gulp.watch('assets/js/**/*.js', gulp.parallel('js'));
     gulp.watch('assets/css/**/*.css', gulp.parallel('min-css'));

@@ -1,6 +1,6 @@
 
 const gulp         = require('gulp');
-// const deploy = require('gulp-gh-pages');
+const deploy = require('gulp-gh-pages');
 const browserSync  = require('browser-sync').create();
 const sass         = require('gulp-sass');
 const clean        = require('gulp-clean');
@@ -11,13 +11,10 @@ const rename       = require("gulp-rename");
 const sourcemaps   = require('gulp-sourcemaps');
 
 
-// gulp.task('deploy', function () {
-//     return gulp.src("./build/**/*")
-//         .pipe(deploy({
-//             remoteUrl: "https://github.com/zefviktor/zefviktor.git",
-//             branch: "gh-pages"
-//         }))
-// });
+gulp.task('deploy', function () {
+    return gulp.src("./build/**/*")
+        .pipe(deploy());
+});
 
 gulp.task('clean', function () {
     return gulp.src(['build'], {read: false})

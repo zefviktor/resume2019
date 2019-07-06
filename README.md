@@ -1,1 +1,1 @@
-# resume2019
+# https://zefviktor.github.io/resume2019/

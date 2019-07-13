@@ -1,6 +1,6 @@
 
 const gulp         = require('gulp');
-const deploy = require('gulp-gh-pages');
+const deploy       = require('gulp-gh-pages');
 const browserSync  = require('browser-sync').create();
 const sass         = require('gulp-sass');
 const clean        = require('gulp-clean');

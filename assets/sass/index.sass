@@ -3,11 +3,12 @@
 @import "fonts"
 
 
+
+
+
+
 body
-  @media (min-width: 992px)
-    background-color: var(--color-third)
-  @media (max-width: 991px)
-    background-color: var(--color-third)
+  background-color: var(--color-third)
 .mobile
   display: flex
   flex-direction: column
@@ -18,6 +19,33 @@ body
   flex-direction: row
   @media (max-width: 991px)
     display: none
+.print
+  display: none
+
+@media print and (max-width: 992px)
+  .mobile
+    display: none
+  .desktop
+    display: flex
+    flex-direction: row
+  .print
+    display: flex
+  \:root
+    --width-personaliti: 80%
+    --justify-content-personaliti: 0
+    --width-skills: 80%
+    --padding-block: calc((var(--padding-left-title) + var(--padding-item))/1.5)
+    --padding-left-title: 20px
+    --width-personal: 100%
+    --width-personal-item: 100%
+    --flex-direction-personal: row
+    --justify-content-personal: 0
+    --width-personaliti-item: 33.33%
+    --flex-direction-personaliti: row
+    //--flex-direction-personal: row
+    --justify-content-education: center
+    //--justify-content-personal: 0
+
 
 .avatar
   width: var(--icon-size-avatar-bg)
@@ -257,6 +285,13 @@ body
     color: var(--color-first)
 
 .word
+  &__link
+    font-family: var(--font-family-first)
+    font-style: italic
+    font-size: var(--font-size-subtitle)
+    font-weight: var(--font-weight__bold)
+    color: white
+    margin: 0 auto
   &__title
     font-family: var(--font-family-first)
     text-transform: uppercase

@@ -7,7 +7,6 @@ html
     link(rel="stylesheet" href="css/reset.min.css")
     link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css")
     link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css")
-    link(rel="stylesheet" href="js/jquery-3.1.1.min.js" type="text/css")
     link(rel="stylesheet" href="css/index.min.css" type="text/css")
     body
         section(class="desktop container")
@@ -23,6 +22,8 @@ html
                 include pug/block6.html
                 include pug/block8.html
                 include pug/block10.html
+        section(class="print container")
+            include pug/block11.html
 
         section(class="mobile")
             div(class="section")
@@ -46,4 +47,7 @@ html
             div(class="section")
                 include pug/block10.html
 
+
         script(src="js/functions.js")
+        script(src="js/jquery-3.1.1.min.js")
+

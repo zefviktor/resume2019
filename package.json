@@ -13,6 +13,7 @@
     "gulp-concat-css": "^3.1.0",
     "gulp-file": "^0.4.0",
     "gulp-gh-pages": "^0.5.4",
+    "gulp-html-pdf": "^0.3.0",
     "gulp-install": "^1.1.0",
     "gulp-modify-css-urls": "^2.0.0",
     "gulp-pug": "^4.0.1",

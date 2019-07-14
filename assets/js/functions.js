@@ -46,11 +46,5 @@ window.onload = function(e){
         itemOff2[i].classList.add('itemOff2')
     }
 
-    // document.getElementsByTagName("BODY")[0].onresize = function()  {
-    //     console.log(innerWidth)
-    //     if(innerWidth < 800){
-    //         alert("sdsdsdsd")
-    //     }
-    // }
 };
 
